@@ -1,11 +1,11 @@
-#include <stdio.h>
-
+#include "main.h"
+#include "unistd.h"
 /**
  *main - prints out putchar
  *
  *Return: Always 0 (Sucess)
  */
-int main(void)
+int main (void)
 {
 	int size;
 	    int i;
@@ -17,9 +17,14 @@ int main(void)
 
 	while (i < size)
 	{
-		putchar(print[i]);
+		_putchar(print[i]);
 	}
 
-	putchar('\n');
+	_putchar('\n');
 	return (0);
+}
+
+int _putchar(char d)
+{
+	return (write(1, &d, 1));
 }

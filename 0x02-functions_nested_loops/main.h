@@ -1,15 +1,6 @@
-#ifndef main
-#define main
+#ifndef _main_h_
+#define _main_h_
 
-/**
- *Function - used to print characters
- *
- *putchar function for printinh out characters
- *
- *Return: Always 1 (Sucess)
- */
-int _putchar(char c)
-{
-	return (write(1, &c, 1));
-}
+int _putchar(char c);
+int main(void);
 #endif
