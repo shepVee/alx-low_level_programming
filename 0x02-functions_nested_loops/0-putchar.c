@@ -1,14 +1,15 @@
 #include <stdio.h>
 
 /**
- * main - printing putchar
+ *main - prints out putchar
  *
- * Return: Always 0 (Sucess)
+ *Return: Always 0 (Sucess)
  */
 int main(void)
 {
-	int i;
 	int size;
+	    int i;
+
 	int print[8] = {95, 112, 117, 116, 99, 104, 97, 114};
 
 	i = 0;
@@ -18,6 +19,7 @@ int main(void)
 	{
 		putchar(print[i]);
 	}
+
 	putchar('\n');
 	return (0);
 }
