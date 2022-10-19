@@ -1,15 +1,24 @@
 #include "main.h"
-#include "unistd.h"
+#include "putchar.c"
 /**
- *function - inserts character
+ * main - prints _printchar
  *
- *@d: character parameter
- *
- *Return: Always 0 (Sucess)
+ * Return: Always 0 (Sucess)
  */
-int _putchar(char d)
+int main(void)
 {
-	return (write(1, &d, 1));
+	int size;
+	int i;
+	i = 0;
 
+	int print[8] = {95, 112, 117, 116, 99, 104, 97, 114};
+	size = sizeof(print) / sizeof(int);
+
+	while (i < size)
+	{
+		_putchar(print[i]);
+	}
+
+	_putchar('\n');
+	return (0);
 }
-
