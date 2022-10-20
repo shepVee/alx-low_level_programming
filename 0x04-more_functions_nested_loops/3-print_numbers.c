@@ -11,8 +11,8 @@ void print_numbers(void)
 
 	while (i < 58)
 	{
-		putchar(i);
+		_putchar(i);
 	}
 
-	putchar('\n');
+	_putchar('\n');
 }
