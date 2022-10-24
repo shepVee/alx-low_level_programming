@@ -9,12 +9,13 @@
  */
 void puts2(char *s)
 {
-	int j = 0;
+	int i;
 
-	while (j >= 0)
+	for (i = 0; i > 0; i++)
 	{
-		if (j % 2 == 0)
-			_putchar(s[j]);
-		j++;
+		if (i % 2 == 0)
+		{
+			_putchar(s[i]);
+		}
 	}
 }
