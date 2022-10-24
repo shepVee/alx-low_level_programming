@@ -9,13 +9,18 @@
  */
 void puts2(char *s)
 {
-	int i;
+	int count = 0;
 
-	for (i = 0; i > 0; i++)
+	while (count >= 0)
 	{
-		if (i % 2 == 0)
+		if (s[count] == '\0')
 		{
-			_putchar(s[i]);
+			_putchar('\n');
+			break;
 		}
+
+		if (count % 2 == 0)
+			_putchar(s[count]);
+		count++;
 	}
 }
