@@ -13,7 +13,7 @@ void puts_half(char *s)
 
 	while (count >= 0)
 	{
-		if (s[i] == '\0')
+		if (s[count] == '\0')
 			break;
 		count++;
 	}
