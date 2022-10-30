@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *_strncat - concatenates two strings
+ *_strncpy - concatenates two strings
  *
  *@dest: function parameters
  *@src: function parameter
@@ -9,7 +9,7 @@
  *
  *Return: pointer to a character
  */
-char *_strncat(char *dest, char *src, int n)
+char *_strncpy(char *dest, char *src, int n)
 {
 	int v;
 
